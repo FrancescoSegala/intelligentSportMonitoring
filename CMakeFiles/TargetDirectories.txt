@@ -1,0 +1,2 @@
+/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/aux.dir
+/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/playerdetect.dir
