@@ -231,7 +231,7 @@ void detect_and_display_players( Mat &frame){
 
     face_cascade.detectMultiScale(frame_gray, players, 1.1, 3, 0, Size(32, 64));
 
-    int tresh_player=40;//250
+    int tresh_player=30;//250
     float min_avg=0.55f;
     Mat roi, roi_bin, roi_closed_areas;
     float avg_white;
@@ -248,7 +248,7 @@ void detect_and_display_players( Mat &frame){
 
         avg_white=white_average(roi_bin);
 
-         hist_b_g_r=calc_hist_hsv(roi_closed_areas);
+        hist_b_g_r=calc_hist_hsv(roi_closed_areas);
          //cc
         if( hist_b_g_r[0] > tresh_player && hist_b_g_r[2] < tresh_player && avg_white > min_avg ) color=bluePX;
         //cc
@@ -258,8 +258,20 @@ void detect_and_display_players( Mat &frame){
         //cc
         if( (hist_b_g_r[0] < tresh_player && hist_b_g_r[2] < tresh_player) || avg_white < min_avg ) color=blackPX;
 
+        if ( (color==blackPX || color==whitePX ) && avg_white > min_avg ){
 
-      
+          Mat red=bin_mask_red(roi);
+          float avg_red=white_average(red);
+
+          Mat blue=bin_mask_blue(roi);
+          float avg_blue=white_average(blue);
+          float min_avg_2=0.20f;
+          if ( avg_blue > min_avg_2 && avg_red < min_avg_2 ) color=bluePX;
+          if ( avg_red > min_avg_2 && avg_blue < min_avg_2 ) color=redPX;
+          if ( avg_red > min_avg_2 && avg_blue > min_avg_2 ) color=purplePX;
+
+        }
+
         /*
         if( color==purplePX ){
 
@@ -630,11 +642,11 @@ metodo ausiliare per mantere chiuso il main LAZINESS OVER NINE THOUSAND!!
 void do_job(Mat &frame){
 
 
-  /*
   if(new_detector) detect_and_display_players(frame);
   else detectAndDisplay(frame);
-  */
   frame=find_n_draw_closed_areas(frame);
   imshow("fra",frame);
+  /*
+  */
   waitKey(0);
 }

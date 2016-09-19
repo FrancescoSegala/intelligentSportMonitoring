@@ -28,33 +28,30 @@ The CXX compiler identification is GNU, found in "/home/cesco/pd/intelligentSpor
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3229692908/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2419387193/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2419387193.dir/build.make CMakeFiles/cmTryCompileExec2419387193.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3229692908.dir/build.make CMakeFiles/cmTryCompileExec3229692908.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3229692908.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3229692908.dir/testCCompiler.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec3229692908
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3229692908.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec3229692908.dir/testCCompiler.c.o  -o cmTryCompileExec3229692908 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTryCompileExec2419387193.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2419387193.dir/testCCompiler.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2419387193
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2419387193.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2419387193.dir/testCCompiler.c.o  -o cmTryCompileExec2419387193 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1915588194/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec130829216/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec130829216.dir/build.make CMakeFiles/cmTryCompileExec130829216.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1915588194.dir/build.make CMakeFiles/cmTryCompileExec1915588194.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec1915588194
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1915588194.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1915588194 -rdynamic  
+Building C object CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec130829216
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec130829216.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec130829216 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -64,9 +61,8 @@ Thread model: posix
 gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1915588194' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOti4eV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1915588194 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec130829216' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccG6oz4m.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec130829216 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
@@ -74,16 +70,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec1915588194/fast"]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec130829216/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec130829216.dir/build.make CMakeFiles/cmTryCompileExec130829216.dir/build]
   ignore line: [make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1915588194.dir/build.make CMakeFiles/cmTryCompileExec1915588194.dir/build]
-  ignore line: [make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec1915588194]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1915588194.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1915588194 -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec130829216]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec130829216.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec130829216 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -93,13 +88,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1915588194' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOti4eV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1915588194 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec130829216' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccG6oz4m.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec130829216 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccOti4eV.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccG6oz4m.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -117,7 +112,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1915588194] ==> ignore
+    arg [cmTryCompileExec130829216] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -129,7 +124,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTryCompileExec1915588194.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec130829216.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -163,17 +158,15 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1918269658/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3189923892/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3189923892.dir/build.make CMakeFiles/cmTryCompileExec3189923892.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1918269658.dir/build.make CMakeFiles/cmTryCompileExec1918269658.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1918269658.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec1918269658.dir/feature_tests.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec1918269658
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1918269658.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec1918269658.dir/feature_tests.c.o  -o cmTryCompileExec1918269658 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTryCompileExec3189923892.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec3189923892.dir/feature_tests.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3189923892
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3189923892.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3189923892.dir/feature_tests.c.o  -o cmTryCompileExec3189923892 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
@@ -186,17 +179,15 @@ make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2358727636/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec355442976/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec355442976.dir/build.make CMakeFiles/cmTryCompileExec355442976.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2358727636.dir/build.make CMakeFiles/cmTryCompileExec2358727636.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2358727636.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec2358727636.dir/feature_tests.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec2358727636
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2358727636.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2358727636.dir/feature_tests.c.o  -o cmTryCompileExec2358727636 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTryCompileExec355442976.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec355442976.dir/feature_tests.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec355442976
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec355442976.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec355442976.dir/feature_tests.c.o  -o cmTryCompileExec355442976 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
@@ -209,17 +200,15 @@ make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2492625993/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1436937517/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1436937517.dir/build.make CMakeFiles/cmTryCompileExec1436937517.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2492625993.dir/build.make CMakeFiles/cmTryCompileExec2492625993.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2492625993.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec2492625993.dir/feature_tests.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec2492625993
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2492625993.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2492625993.dir/feature_tests.c.o  -o cmTryCompileExec2492625993 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTryCompileExec1436937517.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec1436937517.dir/feature_tests.c.o   -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1436937517
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1436937517.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1436937517.dir/feature_tests.c.o  -o cmTryCompileExec1436937517 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
@@ -230,33 +219,30 @@ make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec60969953/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2442310197/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2442310197.dir/build.make CMakeFiles/cmTryCompileExec2442310197.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec60969953.dir/build.make CMakeFiles/cmTryCompileExec60969953.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec60969953.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec60969953.dir/testCXXCompiler.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec60969953
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec60969953.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec60969953.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec60969953 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTryCompileExec2442310197.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2442310197.dir/testCXXCompiler.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2442310197
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2442310197.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2442310197.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2442310197 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec218983076/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3730234925/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3730234925.dir/build.make CMakeFiles/cmTryCompileExec3730234925.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec218983076.dir/build.make CMakeFiles/cmTryCompileExec218983076.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec218983076
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec218983076.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec218983076 -rdynamic  
+Building CXX object CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3730234925
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3730234925.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3730234925 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -266,9 +252,8 @@ Thread model: posix
 gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec218983076' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMehCjn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec218983076 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3730234925' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgPSEZD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3730234925 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
@@ -276,16 +261,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec218983076/fast"]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3730234925/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3730234925.dir/build.make CMakeFiles/cmTryCompileExec3730234925.dir/build]
   ignore line: [make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec218983076.dir/build.make CMakeFiles/cmTryCompileExec218983076.dir/build]
-  ignore line: [make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec218983076]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec218983076.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec218983076 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3730234925]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3730234925.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3730234925 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -295,13 +279,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec218983076' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMehCjn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec218983076 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3730234925' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgPSEZD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3730234925 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccMehCjn.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccgPSEZD.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -319,7 +303,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec218983076] ==> ignore
+    arg [cmTryCompileExec3730234925] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -331,7 +315,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTryCompileExec218983076.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3730234925.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -363,17 +347,15 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1529328153/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec993107729/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec993107729.dir/build.make CMakeFiles/cmTryCompileExec993107729.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1529328153.dir/build.make CMakeFiles/cmTryCompileExec1529328153.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1529328153.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTryCompileExec1529328153.dir/feature_tests.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec1529328153
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1529328153.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec1529328153.dir/feature_tests.cxx.o  -o cmTryCompileExec1529328153 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTryCompileExec993107729.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTryCompileExec993107729.dir/feature_tests.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec993107729
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec993107729.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec993107729.dir/feature_tests.cxx.o  -o cmTryCompileExec993107729 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
@@ -439,17 +421,15 @@ make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1236338701/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1320459535/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1320459535.dir/build.make CMakeFiles/cmTryCompileExec1320459535.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1236338701.dir/build.make CMakeFiles/cmTryCompileExec1236338701.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1236338701.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec1236338701.dir/feature_tests.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec1236338701
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1236338701.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec1236338701.dir/feature_tests.cxx.o  -o cmTryCompileExec1236338701 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTryCompileExec1320459535.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec1320459535.dir/feature_tests.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec1320459535
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1320459535.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1320459535.dir/feature_tests.cxx.o  -o cmTryCompileExec1320459535 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
@@ -515,17 +495,15 @@ make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3407239253/fast"
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2992872200/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2992872200.dir/build.make CMakeFiles/cmTryCompileExec2992872200.dir/build
 make[1]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3407239253.dir/build.make CMakeFiles/cmTryCompileExec3407239253.dir/build
-make[2]: Entering directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3407239253.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec3407239253.dir/feature_tests.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec3407239253
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3407239253.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec3407239253.dir/feature_tests.cxx.o  -o cmTryCompileExec3407239253 -rdynamic 
-make[2]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTryCompileExec2992872200.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec2992872200.dir/feature_tests.cxx.o -c /home/cesco/pd/intelligentSportMonitoring/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2992872200
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2992872200.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2992872200.dir/feature_tests.cxx.o  -o cmTryCompileExec2992872200 -rdynamic 
 make[1]: Leaving directory '/home/cesco/pd/intelligentSportMonitoring/CMakeFiles/CMakeTmp'
 
 
