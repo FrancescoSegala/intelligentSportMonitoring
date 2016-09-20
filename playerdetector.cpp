@@ -34,13 +34,9 @@ void do_job(Mat & frame);
 void detectAndDisplay( Mat &frame);
 void detect_and_display_players(Mat &frame);
 cv::Mat bin_mask_green(Mat &frame);
-cv::Mat bin_mask_white(Mat &frame);
 cv::Mat bin_mask_red(Mat &frame);
 cv::Mat bin_mask_blue(Mat &frame);
 cv::Mat bin_mask_green_2(Mat &frame);
-std::vector<Vec4i> find_contours_playground(Mat &frame);
-std::vector<Vec4i> find_contours_canny(Mat &frame);
-void draw_perimeter(Mat &frame,Mat &original);
 Mat find_n_draw_closed_areas(Mat &frame);
 Vec3i calc_hist_hsv(Mat &roi);
 int conta_white(Mat &roi);
@@ -258,32 +254,6 @@ void detect_and_display_players( Mat &frame){
         //cc
         if( (hist_b_g_r[0] < tresh_player && hist_b_g_r[2] < tresh_player) || avg_white < min_avg ) color=blackPX;
 
-        if ( (color==blackPX || color==whitePX ) && avg_white > min_avg ){
-
-          Mat red=bin_mask_red(roi);
-          float avg_red=white_average(red);
-
-          Mat blue=bin_mask_blue(roi);
-          float avg_blue=white_average(blue);
-          float min_avg_2=0.20f;
-          if ( avg_blue > min_avg_2 && avg_red < min_avg_2 ) color=bluePX;
-          if ( avg_red > min_avg_2 && avg_blue < min_avg_2 ) color=redPX;
-          if ( avg_red > min_avg_2 && avg_blue > min_avg_2 ) color=purplePX;
-
-        }
-
-        /*
-        if( color==purplePX ){
-
-          Mat red=bin_mask_red(roi);
-          Rect red_rect=boundingRect(red);
-          Mat blue=bin_mask_blue(roi);
-          Rect blue_rect=boundingRect(blue);
-          rectangle(frame,red_rect,redPX,2);
-          rectangle(frame,blue_rect,bluePX,2);
-
-        }
-        */
 
         rectangle(frame, players[i], color, 2);
 
@@ -321,7 +291,6 @@ float white_average(Mat &roi){
 /*
 --------------------------------------------------------------------------------
 */
-
 
 
 /*
@@ -374,6 +343,10 @@ cv::Mat bin_mask_green_2(Mat &frame){
 }
 
 
+/*
+@params : frame to calculate binary mask
+return : binary mask with 1 for red 0 anyway
+*/
 cv::Mat bin_mask_red(Mat &frame){
 
   Mat hsv_image, bin_mask;
@@ -387,7 +360,10 @@ cv::Mat bin_mask_red(Mat &frame){
 }
 
 
-
+/*
+@params : frame to calculate binary mask
+return : binary mask with 1 for blue 0
+*/
 cv::Mat bin_mask_blue(Mat &frame){
 
   Mat hsv_image, bin_mask;
@@ -400,20 +376,6 @@ cv::Mat bin_mask_blue(Mat &frame){
   return bin_mask;
 }
 
-/*
-@params Mat: frame to calculate the binary mask
-return : bynary mask of the input frame with white pixel
-*/
-cv::Mat bin_mask_white(Mat &frame){
-  Mat gray, bin_mask;
-  cvtColor(frame,gray,COLOR_BGR2GRAY);
-
-  GaussianBlur( gray, gray, Size( 5, 5 ), 0, 0 );
-
-  threshold( gray , bin_mask ,150,255,THRESH_BINARY);
-
-  return bin_mask;
-}
 
 /*
 @params Mat : frame to calculate the binary mask
@@ -451,117 +413,10 @@ cv::Mat bin_mask_green(Mat &frame){
 }
 
 
-/*
-@params lines: vector of vector with 4 integer ax ay bx by of the contours
-@params Mat : frame to apply the lines
-return : draw the lines on the frame
-*/
-cv::Mat apply_contours(vector<Vec4i> lines,Mat& frame){
-
-  for (size_t i = 0; i < lines.size(); i++) {
-    Scalar color=Scalar(0,0,255);
-
-    Point a=Point(lines[i][0],lines[i][1]);
-    Point b=Point(lines[i][2],lines[i][3]);
-
-    line( frame, a , b , color, 3, 8 );
-
-  }
-  return frame;
-}
-
-
-/*
-@params Mat frame: input frame (it can be BGR or Grayscale ) to compute the contourns calculation
-return: vector of Vec4i (vector of 4 integer) ax ay bx by
-*/
-//pipeline: blur--> canny-->hough transforn-->lines
-std::vector<Vec4i>  find_contours_canny(Mat &frame){
-
-  Mat gray, drawing;
-  if( frame.channels() > 1 )  cvtColor(frame,gray,CV_BGR2GRAY);
-  else gray=frame.clone();
-  //dovrei fare il test qui
-  Canny( gray, gray, 50, 150, 3);
-
-  gray.convertTo(drawing, CV_8U);
-  vector<Vec4i> lines;
-  HoughLinesP(drawing, lines, 1, CV_PI/180, 80, 75, 10 );
-
-  return lines;
-}
-
-
-/*
-@params Mat: frame to calculate the contourns, it must be a binary mask
-@params Mat: original frame for drawing contourns
-return : void
-*/
-void draw_perimeter(Mat &frame , Mat &original){
-  Mat gray;
-  cvtColor(frame,gray,CV_BGR2GRAY);
-  Canny(gray,gray,50,150,3);
-  vector< vector<Point> > contours;
-  vector<Vec4i> hierarchy;
-  findContours( gray, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_NONE, Point(0, 0) );
-  for (size_t i = 0; i < contours.size(); i++) {
-
-    approxPolyDP(contours[i] , contours[i] ,1 , false );
-    drawContours( original, contours, i, Scalar(0,0,255), 2, 8, hierarchy, 0, Point() );
-  }
-  //imshow("original+",original);
-}
-
-
-/*
-@params Mat : frame to calculate the contourns, it must be BGR image
-return : vector<Vec4i> vector of vector of 4 int value : ax ay bx by
-*/
-//usa canny--> find contourns --> draw contourns --> hough lines --> lines
-vector<Vec4i> find_contours_playground(Mat &frame){
-
-  Mat gray,drawing;
-  if( frame.channels() > 1 )  cvtColor(frame,gray,CV_BGR2GRAY);
-  else gray=frame.clone();
-
-  //detect edge
-  Canny( gray, gray, 50, 150, 3);
-  //find contours
-  vector<vector<Point> > contours;
-  vector<Vec4i> hierarchy;
-  Moments moms;
-  double area;
-  double centroidex;
-  double centroidey;
-
-  int cy, cx;
-
-  findContours( gray, contours, hierarchy, CV_RETR_LIST, CV_CHAIN_APPROX_NONE, Point(0, 0) );
-  for (size_t i = 0; i < contours.size(); i++) {
-
-    moms=moments(Mat(contours[i]));
-    area=moms.m00;
-    centroidex =moms.m01;
-    centroidey =moms.m10;
-    cx=centroidex/area;
-    cy=centroidey/area;
-    if ( area > 30 ){
-
-      drawContours( frame, contours, i, Scalar(0,0,255), 2, 8, hierarchy, 0, Point() );
-      //circle(frame,Point(cx,cy),7,Scalar(0,0,0),8);
-    }
-
-  }
-
-  vector<Vec4i> lines;
-  HoughLinesP(gray, lines, 1, CV_PI/180, 80, 70 , 10 );
-
-  return lines;
-}
 
 /*
 @params : frame to calculate player contourns
-return: return a frame with black pixels except for the areas (those greater than 25) and its content
+return: return a frame with black pixels except for the areas (those greater than 20) and its content
 */
 Mat find_n_draw_closed_areas(Mat &frame){
 
@@ -614,28 +469,6 @@ Mat find_n_draw_closed_areas(Mat &frame){
 }
 
 
-
-/*
-@params frame: frame to calculate the binary mask and re-project on it
-return void (make side effect)
-*/
-void project_bin(Mat &frame){
-
-  Vec3b blackPX={0,0,0};
-  Vec3b whitePX={255,255,255};
-  Vec3b greenPX={0,255,0};
-
-  Mat bin=bin_mask_green(frame);
-
-  for (size_t i = 0; i < frame.rows; i++) {
-    for (size_t j = 0; j < frame.cols; j++) {
-
-      if( bin.at<Vec3b>(i,j)==greenPX ) frame.at<Vec3b>(i,j)=greenPX;
-    }
-  }
-}
-
-
 /*
 metodo ausiliare per mantere chiuso il main LAZINESS OVER NINE THOUSAND!!
 */
@@ -644,9 +477,9 @@ void do_job(Mat &frame){
 
   if(new_detector) detect_and_display_players(frame);
   else detectAndDisplay(frame);
+  /*
   frame=find_n_draw_closed_areas(frame);
   imshow("fra",frame);
-  /*
-  */
   waitKey(0);
+  */
 }
