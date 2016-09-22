@@ -312,8 +312,9 @@ Vec3i calc_hist_hsv(Mat &roi){
       uchar saturation_part=pixel.val[1];
       uchar value_part=pixel.val[2];
 
-      if((hue_part<MAX_HUE_BLUE && hue_part>MIN_HUE_BLUE) && saturation_part>50 ) b++;
-      if((hue_part>MAX_HUE_RED || hue_part<MIN_HUE_RED) && saturation_part>50) r++;
+      if((hue_part<MAX_HUE_JERSEY_HOME && hue_part>MIN_HUE_JERSEY_HOME ) && saturation_part>50 ) b++;
+      //if it's red ----like above otherwise
+      if((hue_part>MAX_HUE_JERSEY_AWAY || hue_part<MIN_HUE_JERSEY_AWAY ) && saturation_part>50) r++;
       if((hue_part<MAX_HUE_GREEN && hue_part>MIN_HUE_GREEN) && saturation_part>50) g++;
 
     }

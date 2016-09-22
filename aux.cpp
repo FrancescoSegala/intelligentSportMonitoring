@@ -20,7 +20,7 @@ using namespace cv;
 #define MAX_HUE_BLUE 115
 #define MIN_HUE_BLUE 100
 
-void find_Contours(Mat &frame);
+Mat find_n_draw_closed_areas(Mat &roi);
 
 void calc_hist_hsv(Mat &roi){
 
@@ -62,9 +62,8 @@ void calc_hist_hsv(Mat &roi){
     }
   }
 
-  find_Contours(res);
+  res=find_n_draw_closed_areas(res);
 
-  printf("r: %d    g: %d   b: %d\n",r , g , b );
   imshow("res",res);
   imshow("roi",roi);
   if( r > playertrash ) std::cout << "c'è un giocatore rosso" << std::endl;
@@ -279,31 +278,58 @@ cv::Mat bin_mask_green(Mat &frame){
   return bin_mask;
 }
 
-vector<Vec4i> double_filter_contourn(Mat &frame ){
-
-  std::vector<Vec4i> res;
-    /**/
-
-}
 
 
 
-void project_bin(Mat &frame){
+Mat find_n_draw_closed_areas(Mat &frame){
 
-  Vec3b blackPX={0,0,0};
+  Mat gray,mask,res;
+  if( frame.channels() > 1 )  cvtColor(frame,gray,CV_BGR2GRAY);
+  else gray=frame.clone();
+  mask=Mat(frame.rows,frame.cols,CV_8UC3,Scalar(0,0,0));
+  res=Mat(frame.rows,frame.cols,CV_8UC3,Scalar(255,255,255));
+
+  //detect edge
+  Canny( gray, gray, 50, 150, 3);
+  //find contours
+  vector<vector<Point> > contours;
+  vector<Vec4i> hierarchy;
+  Moments moms;
+  double area;
+  //double centroidex;
+  //double centroidey;
+
+  int cy, cx;
   Vec3b whitePX={255,255,255};
-  Vec3b greenPX={0,255,0};
+  findContours( gray, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0) );
+  for (size_t i = 0; i < contours.size(); i++) {
 
-  Mat bin=bin_mask_green(frame);
+    moms=moments(Mat(contours[i]));
+    area=moms.m00;
 
+    //centroidex =moms.m01;
+    //centroidey =moms.m10;
+    //cx=centroidex/area;
+    //cy=centroidey/area;
+    if ( area > 20 ){
+      approxPolyDP(contours[i] , contours[i] ,1 , true );
+      drawContours( mask, contours, i, Scalar(255,255,255), CV_FILLED, 8, hierarchy, 0, Point() );
+      //circle(frame,Point(cx,cy),7,Scalar(0,0,0),8);
+    }
+
+
+  }
   for (size_t i = 0; i < frame.rows; i++) {
     for (size_t j = 0; j < frame.cols; j++) {
 
-      if( bin.at<Vec3b>(i,j)==greenPX ) frame.at<Vec3b>(i,j)=greenPX;
+      if( mask.at<Vec3b>(i,j) == whitePX ) res.at<Vec3b>(i,j)=frame.at<Vec3b>(i,j);
+
     }
   }
+  //imshow("mask", mask);
+  //imshow("res",res);
+  return res;
 }
-
 
 
 int main(int argc, char const *argv[]) {
@@ -338,8 +364,10 @@ int main(int argc, char const *argv[]) {
     //std::vector<Point> f=filtra(v);
     //applica(v,res);*/
     //project_bin(src);
-    find_Contours(src);
+
+    src=find_n_draw_closed_areas(src);
     imshow("frame",src);
+    imwrite("/home/cesco/Pictures/a.jpg",src);
     //res=manipulate_bin(binmask);
     //imshow("res",res);
     waitKey(0);
